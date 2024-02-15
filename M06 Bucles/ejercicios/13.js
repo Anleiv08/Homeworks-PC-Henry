@@ -5,6 +5,21 @@ function esEntero(num) {
   // Ejemplo: (-10) ---> true
   // De lo contrario, retorna false.
   // Tu código:
+  // Si el número es negativo, lo convertimos a positivo
+ 
+  num = num < 0 ? -num : num;
+
+  if (num === 0) {
+    return true;
+  }
+
+  for (let i = 0; i <= num; i++) {
+    if(i == num){
+      return true
+    }
+  }
+  return false;
 }
+
 
 module.exports = esEntero;
